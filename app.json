@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/warn/index",
+    "pages/scanresult/index",
+    "pages/billing/index",
+    "pages/my/index",
+    "pages/wallet/index",
+    "pages/charge/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "共享储物柜",
+    "navigationBarTextStyle": "white"
+  }
+}

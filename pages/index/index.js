@@ -1,0 +1,32 @@
+var app=getApp()
+Page({
+   data:{
+     scale:18,
+     latitude:0,
+     longitude:0
+   },
+   onLoad:function(options){
+     wx.getLocation({
+       type:"gcj02",
+       success:(res)=>{
+         this.setData({
+           longitude:res.longitude,
+           latitude:res.latitude
+         })
+       }
+     });
+   },
+   onReady:function(){
+   },
+   onShow:function(){
+     this.mapCtx=wx.createMapContext("BaiduMap");
+     this.movetoPosition()
+   },
+   movetoPosition:function(){
+     this.mapCtx.moveToLocation();
+   }
+})
+   onHide:function(){
+   },
+   onUnload:function(){
+   }
